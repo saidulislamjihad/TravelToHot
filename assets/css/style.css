@@ -38,7 +38,7 @@ body {
 /*Header css start*/
 .header-section {
     position: relative;
-    background: #000;
+    background: rgb(0 0 0 / 91%);
 }
 .logo__shape {
     width: calc(50% - 394px);
@@ -96,7 +96,7 @@ body {
   align-items: center;
 }
 .nav-item:hover .nav-item-link {
-  color: #FF7E16;
+  color: #ff4a52;
 }
 .nav-item-link {
   position: relative;
@@ -165,7 +165,7 @@ body {
 }
 
 .submenu-item-link:hover {
-    color: #ff9e4f;
+    color: #ff4a52;
 }
 
 .submenu-item {
@@ -232,8 +232,8 @@ body {
     /*fixed header*/
 .fixed-header .header-section {
     position: fixed;
-    background: #75f3b0;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: rgb(0 0 0 / 74%);
+    box-shadow: rgb(245 245 245 / 27%) 0px 3px 8px;
     width: 100%;
     top: 0;
     left: 0;
@@ -283,7 +283,7 @@ body {
 /*popular destination section css start*/
 .popular-destination-section {
     padding: 40px 0;
-    background: #000;
+    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
 }
 .popular-section-title {
     text-align: center;
@@ -304,13 +304,16 @@ body {
     margin-bottom: 0;
 }
 .popular-destination-item {
-    position: relative;
     margin-bottom: 25px;
-    overflow: hidden;
     transition: all .3s ease;
-    border-radius: 5px;
+    border-radius: 10px;
+    background: #ffffff;
+    display: block;
 }
-.popular-destination-item:before {
+.popular-destination-item .item-image {
+    position: relative;
+}
+.popular-destination-item .item-image:before {
     content: "";
     top: 0;
     left: 0;
@@ -321,18 +324,15 @@ body {
     background: linear-gradient(to bottom,rgba(4,14,39,0) 0%,rgba(4,14,39,0.7) 100%);
 }
 .popular-destination-item .item-content {
-    position: absolute;
-    left: 30px;
-    bottom: 30px;
-    z-index: 9;
+    padding: 10px 15px 20px;
 }
 .popular-destination-item .item-content .content-title {
-    color: #ffffff;
-    font-size: 22px;
+    color: #000;
+    font-size: 23px;
     font-weight: 400;
-    font-family: 'Rubik', sans-serif;
     transition: all .3s ease;
     margin-bottom: 0;
+    font-family: 'Yeseva One', cursive;
 }
 .popular-destination-item .item-content .content-title a {
     display: inline-block;
@@ -355,510 +355,78 @@ body {
 .popular-destination-item:hover .item-content .content-title a {
     background: #ff4a52;
 }
+
+.popular-destination-item .item-content .content-location {
+    color: #ff4a52;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 0;
+}
+
+.popular-destination-item .item-content .content-location i {
+    font-size: 20px;
+}
+
+.popular-destination-item .item-content .content-location:hover {
+    color: #000;
+}
 /*popular destination section css End*/
 
-
-/*Mission & Vision section css start*/
-.mission-vision-section {
+/*Useful links section css start*/
+.userful-links-section {
     padding: 40px 0;
+    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
 }
 
-.mission-vision-item-wrap {
-    background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 20px;
-    padding: 40px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-    transition: all .3s ease;
-}
-
-.mission-vision-item-icon i {
-    font-size: 40px;
-    color: #32b67a;
-    transition: all .3s ease;
-}
-
-.mission-vision-item-icon {
-    margin-right: 20px;
-    transition: all .3s ease;
-}
-
-.mission-vision-item-content-title {
-    font-size: 30px;
-    font-weight: 500;
-    color: #000;
-    margin-bottom: 0;
-}
-
-.mission-vision-item-content-text {
-    margin-bottom: 0;
-    font-size: 16px;
-    color: #6F7775;
-    font-weight: 400;
-    line-height: 27px;
-}
-
-.mission-vision-item-wrap:hover .mission-vision-item-icon i {
-    transform: scale(1.2);
-}
-
-.donate-btn-inner {
-    display: inline-block;
-    background: #32b67a;
-    padding: 10px 30px;
-    font-size: 18px;
-    border-radius: 20px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.donate-btn-inner:hover {
-    color: #0f272a;
-}
-
-.donate-btn-outer {
-    margin-top: 15px;
-}
-/*Mission & Vision section css End*/
-
-/*Counter section css start*/
-.counter-section {
-    padding-bottom: 40px;
-}
-
-.counter-items-wrapper {
-    background: url(../images/fun-fact-bg-image.jpg);
-    padding: 80px 0;
-    border-radius: 30px;
-    background-size: cover;
-}
-
-.counter-item-wrap {
-    text-align: center;
-    border-right: 1px solid #fff;
-}
-
-.counter-item-wrap.border-none {
-    border-right: none;
-}
-
-.counter-item-wrap .counter-number {
-    color: #fff;
-    margin-bottom: 0;
-    font-size: 40px;
-    font-weight: 500;
-}
-
-.counter-item-wrap .counter-name {
-    font-family: 'Caveat';
-    font-weight: 700;
-    font-size: 28px;
-    color: #FFFFFF;
-}
-/*Counter section css End*/
-
-/*Board Member section css start*/
-.board-members-section {
-    padding: 40px 0;
-}
-
-.board-member-image-outer {
+.links-item-outer {
+    transform: perspective(1px) translateZ(0);
+    display: block;
     position: relative;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    padding: 15px 30px;
+    color: #000;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.board-member-image-outer:after {
-    content: '';
+.links-item-outer:hover {
+    color: #fff;
+}
+
+.links-item-outer:before {
+    content: "";
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     right: 0;
-    width: 300px;
-    height: 100%;
-    margin: auto;
-    border-radius: 50%;
-    background: rgb(50 182 122 / 30%);
-    transition: 0.5s;
-    transform: scale(0);
-    z-index: 1;
+    bottom: 0;
+    background: linear-gradient(145deg, #6a67ce, #fc636b);
+    transform: scaleX(0);
+    transform-origin: 100%;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    border-radius: 5px;
 }
 
-.board-member-image-outer img {
-    max-width: 300px;
-    margin: auto;
-}
-
-.board-member-image-outer .social-list {
-    padding-left: 0;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 20%;
-    left: -50px;
-    transform: translateX(-50%);
-    z-index: 9;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .5s ease;
-}
-
-.social-list .social-list-item {
-    margin-right: 10px;
-}
-
-.social-list-item-link {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    background: #FFFFFF;
-    color: #25283A;
-}
-
-.board-member-image-outer:hover::after {
-    transform: scale(1);
-}
-
-.social-list-item:last-child {
-    margin-right: 0;
-}
-
-.social-list-item-link:hover {
-    background: #0e2829;
-}
-
-.social-list-item-link:hover i {
+.links-item-outer:hover::before {
+    transform: scaleX(1);
+    /* transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); */
     color: #fff;
 }
-
-.social-list-item-link i {
-    transition: all .3s ease;
-}
-
-.board-member-image-outer:hover .social-list {
-    left: 50%;
-    opacity: 1;
-    visibility: visible;
-}
-
-.board-member-info {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.board-member-name {
-    color: #fff;
-    font-size: 25px;
-}
-
-.board-member-position {
-    font-size: 16px;
-    margin-bottom: 0;
-    font-weight: 500;
-    color: #c6d4d1;
-}
-
-.board-members-items-wrapper .owl-nav .owl-prev {
-    left: -50px;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: #ffffffed!important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 50%;
-}
-
-.board-members-items-wrapper .owl-nav .owl-prev span {
-    font-size: 30px;
-    line-height: 24px;
-}
-
-.board-members-items-wrapper .owl-nav .owl-next {
-    right: -50px;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: #fff!important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 50%;
-}
-
-.board-members-items-wrapper .owl-nav .owl-next span {
-    font-size: 30px;
-    line-height: 24px;
-}
-/*Board Member section css End*/
-
-/*Company Logo section css start*/
-.company-logo-sectino {
-    background: #32b67a;
-    padding: 40px 0;
-}
-
-.company-logo-item-outer {
-    display: inline-block;
-}
-
-.company-logo-item-outer img {
-    max-width: 150px;
-    margin: auto;
-    transition: all .3s ease;
-}
-
-.company-logo-item-outer:hover img {
-    transform: scale(1.05);
-}
-
-.company-logo-items-wrapper .owl-nav .owl-prev {
-    left: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: #ffffffed!important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 50%;
-}
-
-.company-logo-items-wrapper .owl-nav .owl-prev span {
-    font-size: 30px;
-    line-height: 24px;
-}
-
-.company-logo-items-wrapper .owl-nav .owl-next {
-    right: -40px;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: #fff!important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 50%;
-}
-
-.company-logo-items-wrapper .owl-nav .owl-next span {
-    font-size: 30px;
-    line-height: 24px;
-}
-
-.company-logo-items-wrapper .owl-item {
-    text-align: center;
-}
-/*Company Logo section css End*/
-
-
-/*Can Help Section css start*/
-.can-help-section {
-    background: url(../images/home-contact-bg.png);
-    padding: 60px 0;
-}
-
-.can-help-info {
-    max-width: 800px;
-    margin: auto;
-    text-align: center;
-}
-
-.can-help-info-title {
-    color: #fff;
-    font-size: 42px;
-    font-weight: 500;
-}
-
-.can-help-info-text {
-    font-size: 16px;
-    color: #fff;
-    line-height: 26px;
-    font-weight: 400;
-    margin-bottom: 25px;
-}
-/*Can Help Section css End*/
-
-/*Blog section css start*/
-.blog-section {
-    padding: 50px 0;
-}
-
-.blog-item-outer {
-    background: #fff;
-    border-radius: 20px;
-    border: 1px solid rgb(118 240 184);
-    overflow: hidden;
-    transition: all .5s ease;
-    margin-bottom: 20px;
-}
-
-.blog-item-image {
-    position: relative;
-    transition: all .5s ease;
-    display: block;
-}
-
-.blog-item-image img {
-    transition: all .5s ease;
-    height: 300px;
-    object-fit: cover;
-}
-
-.blog-item-image .blog-tag {
-    display: inline-block;
-    position: absolute;
-    bottom: -17px;
-    left: 15px;
-    background: #7ceeb4;
-    color: #fff;
-    padding: 6px 20px;
-    border-radius: 20px;
-    font-size: 16px;
-    font-family: 'Yeseva One', cursive;
-}
-
-.blog-item-content {
-    padding: 30px 20px 15px;
-}
-
-.blog-item-content .authos-comments ul {
-    padding-left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0;
-}
-
-.blog-item-content .authos-comments {
-    margin-bottom: 20px;
-}
-
-.blog-item-content .authos-comments ul li i {
-    color: #7ceeb4;
-    margin-right: 3px;
-}
-
-.blog-item-content .authos-comments ul li span {
-    font-size: 16px;
-    color: #000;
-    font-weight: 600;
-}
-.blog-item-title {
-    display: inline-block;
-    font-family: 'Yeseva One';
-    font-size: 20px;
-    line-height: 30px;
-    color: #25283A;
-    margin-bottom: 10px;
-    transition: 0.3s;
-}
-
-.blog-item-title:hover {
-    color: #7ceeb4;
-}
-
-.blog-item-text {
-    font-size: 15px;
-    font-weight: 400;
-    color: #6F7775;
-    line-height: 26px;
-}
-
-.blog-bottom-outer {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-.blog-bottom-link {
-    display: inline-block;
-    color: #25283A;
-    font-size: 16px;
-    position: relative;
-    font-family: 'Yeseva One', cursive;
-}
-
-.blog-bottom-link i {
-    color: #7ceeb4;
-    margin-left: 5px;
-    font-size: 14px;
-}
-
-.blog-bottom-link:hover {
-    color: #7ceeb4;
-}
-
-.blog-items-wrapper .owl-nav .owl-prev {
-    left: -50px;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: #ffffffed!important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 50%;
-}
-
-.blog-items-wrapper .owl-nav .owl-prev span {
-    font-size: 30px;
-    line-height: 24px;
-}
-
-.blog-items-wrapper .owl-nav .owl-next {
-    right: -50px;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transition: all 0.4s ease-out;
-    transition: all 0.4s ease-out;
-    background: #fff!important;
-    width: 40px;
-    cursor: pointer;
-    height: 40px;
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    border-radius: 50%;
-}
-
-.blog-items-wrapper .owl-nav .owl-next span {
-    font-size: 30px;
-    line-height: 24px;
-}
-/*Blog section css End*/
+/*Useful links section css End*/
 
 /*Footer section css start*/
 .footer-section {
     padding: 60px 0px;
-    background: #0e2829;
+    background: #0e0e0e;
     background-image: url(../images/home-contact-bg.png);
 }
 
@@ -902,29 +470,28 @@ body {
 
 .footer-list-item-link i {
     margin-right: 6px;
-    color: #7ceeb4;
+    color: #ff5352;
 }
 
 .footer-list-item-link:hover {
-    color: #7ceeb4;
+    color: #ff5352;
 }
 
 .footer-social-link-item a {
     background: #fff;
     padding: 5px 10px;
     font-size: 14px;
-    border-radius: 100%;
+    border-radius: 5px;
     color: #000;
     display: block;
+    transition: all .5s ease;
 }
 
 .footer-social-link-item {
     margin-right: 8px;
 }
 
-.footer-social-link-item:hover a {
-    transform: rotate(360deg);
-}
+.footer-social-link-item:hover a {background: linear-gradient(145deg, #6a67ce, #fc636b);color: #fff;}
 
 /*.footer-bottom-outer {
     border-top: 1px solid #dbe2e9;
