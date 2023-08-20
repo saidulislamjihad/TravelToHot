@@ -49,21 +49,21 @@ $(document).ready(function() {
 });
 
 //Home slider Js
-$('.home-slider-wrapper').owlCarousel({
-    loop: true,
-    margin: 10,
-    dots: false,
-    nav: false,
-    autoplay: true,
-    responsive: {
-        0: {
-            items: 1
-        },
-        600: {
-            items: 1
-        },
-        1000: {
-            items: 1
-        }
-    }
-});
+// $('.home-slider-wrapper').owlCarousel({
+//     loop: true,
+//     margin: 10,
+//     dots: false,
+//     nav: false,
+//     autoplay: true,
+//     responsive: {
+//         0: {
+//             items: 1
+//         },
+//         600: {
+//             items: 1
+//         },
+//         1000: {
+//             items: 1
+//         }
+//     }
+// });
