@@ -270,6 +270,11 @@ body {
     color: #fff;
     text-transform: capitalize;
     margin-bottom: 0;
+    transition: all .5s ease;
+}
+
+.slider-content-outer:hover .slider-title {
+    color: #ff4a52;
 }
 
 .slider-content-outer .slider-text {
@@ -346,6 +351,11 @@ body {
     font-weight: 600;
     margin-bottom: 0;
     text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.popular-destination-item:hover .item-content .content-location {
+    color: #ff4a52;
 }
 
 .popular-destination-item .item-content .content-location i {
@@ -400,6 +410,33 @@ body {
     transform: scaleX(1);
     /* transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); */
     color: #fff;
+}
+
+.userful-links-section .accordion-button {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    border-radius: 5px;
+}
+
+.userful-links-section .accordion-item {
+    margin-bottom: 20px;
+    background: transparent;
+}
+
+.userful-links-section .accordion-item:hover .accordion-button {
+    background: #ff4a52;
+    color: #ffff;
+}
+
+.userful-links-section .accordion-button {
+    background: #ff4a52;
+    color: #fff;
+}
+
+.userful-links-section .accordion-button.collapsed {
+    background: #fff;
+    color: #000;
 }
 /*Useful links section css End*/
 
