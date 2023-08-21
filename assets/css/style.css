@@ -271,11 +271,12 @@ body {
     text-transform: capitalize;
     margin-bottom: 0;
     transition: all .5s ease;
+    background: linear-gradient(145deg, #6a67ce, #fc636b);
+    padding: 15px 30px;
+    border-radius: 100px;
 }
 
-.slider-content-outer:hover .slider-title {
-    color: #ff4a52;
-}
+.slider-content-outer:hover .slider-title {transform: translateY(-10px);}
 
 .slider-content-outer .slider-text {
     font-size: 20px;
