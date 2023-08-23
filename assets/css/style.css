@@ -261,29 +261,64 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    /* text-align: center; */
 }
 
 .slider-content-outer .slider-title {
-    font-size: 60px;
+    font-size: 35px;
     font-weight: 600;
     color: #fff;
     text-transform: capitalize;
     margin-bottom: 0;
     transition: all .5s ease;
     background: linear-gradient(145deg, #6a67ce, #fc636b);
-    padding: 15px 30px;
+    padding: 12px 30px;
     border-radius: 100px;
+    display: inline-block;
 }
 
-.slider-content-outer:hover .slider-title {transform: translateY(-10px);}
+.slider-content-outer .slider-title i {
+    font-size: 20px;
+}
 
-.slider-content-outer .slider-text {
+.home-item-submenu {
+    position: absolute;
+    top: 65px;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0);
+    width: 100%;
+    z-index: 10;
+    border-radius: 0px 0px 10px 10px;
+    padding-left: 0;
+    border-radius: 10px;
+    transition: all .4s ease;
+    box-shadow: rgb(0 0 0 / 24%) 0px 8px 8px;
+    margin-bottom: 0;
+}
+
+.home-item-submenu .submenu-item-link {
+    color: #000;
+    font-size: 18px;
+}
+
+.slider-content-outer:hover .home-item-submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+.home-item-submenu .submenu-item-link:hover {
+    background: #ddd;
+}
+
+/*.slider-content-outer .slider-text {
     font-size: 20px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 0;
-}
+}*/
 /*Home Slider css End*/
 
 /*popular destination section css start*/
