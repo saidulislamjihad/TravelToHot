@@ -565,3 +565,35 @@ body {
     color: #ffa500;
 }*/
 /*Footer section css End*/
+
+/*Sub category page css start*/
+.sub-category-section {
+    padding: 40px 0;
+    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+}
+
+.sub-category-content .sub-title {
+    color: #ff4a52;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.sub-category-content .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sub-category-content .text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ddd;
+    line-height: 26px;
+}
+
+.google-map-section {
+    padding: 20px 0;
+    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+}
+/*Sub category page css end*/
