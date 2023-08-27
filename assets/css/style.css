@@ -102,7 +102,7 @@ body {
     content: "\f111";
     font-size: 10px;
     font-weight: 500;
-    color: #fc9d01;
+    color: #FF7E16;
     font-family: "Font Awesome 5 Free";
     padding: 0 10px;
     position: relative;
@@ -115,7 +115,7 @@ body {
 }
 
 .banner-content-wrapper .banner-item li a i {
-    color: #fc9d01;
+    color: #FF7E16;
     margin-right: 5px;
 }
 
@@ -234,7 +234,7 @@ body {
 }
 
 .submenu-item-link:hover {
-    color: #ff4a52;
+    color: #ff7e16;
 }
 
 .submenu-item {
@@ -641,7 +641,7 @@ body {
 }
 
 .sub-category-content .sub-title {
-    color: #ff4a52;
+    color: #FF7E16;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 5px;
@@ -654,10 +654,10 @@ body {
 }
 
 .sub-category-content .text {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
-    color: #ddd;
-    line-height: 26px;
+    color: #fff;
+    line-height: 24px;
 }
 
 .google-map-section {
@@ -745,7 +745,7 @@ body {
 .contact-info-icon {
     display: inline-block;
     padding: 20px 30px;
-    background: #ff5733;
+    background: #FF7E16;
     margin-bottom: 20px;
     border-radius: 5px;
 }
@@ -765,7 +765,7 @@ body {
 
 .contact-info-item a {
     color: #222;
-    font-size: 16px;
+    font-size: 18px;
     display: inline-block;
 }
 
@@ -815,7 +815,7 @@ body {
     width: 100%;
     padding: 10px 0;
     border: none;
-    background: #ff5733;
+    background: #ff7e16;
     color: #FFF;
     font-size: 18px;
     font-weight: 500;
@@ -824,3 +824,39 @@ body {
 }
 
 /*Contact section css End*/
+
+/*Details page css start*/
+.details-section {
+    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+    padding: 40px 0;
+}
+
+.details-content-wrap {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.details-content-wrap h1 {
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.details-content-wrap p {
+    font-size: 19px;
+    font-weight: 400;
+    font-family: "Oxygen",sans-serif;
+    color: #000;
+}
+
+.details-content-wrap img {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 15px;
+}
+
+.details-content-wrap a {
+    color: #FF7E16;
+}
+/*Details page css End*/

@@ -22,6 +22,15 @@
 	}
 	.footer-item-outer {
 	    margin-bottom: 30px;
+	}
+	.sub-category-content {
+	    margin-top: 25px;
+	}
+	.sub-category-content .title {
+	    font-size: 25px;
+	}
+	.sub-category-content .text {
+	    font-size: 18px;
 	}	
 }
 
@@ -129,7 +138,10 @@
 	    height: 100%;
 	}
 	.about-sec-content-wrap p {
-	    font-size: 18px;
+	    font-size: 17px;
+	}
+	.details-content-wrap p {
+	    font-size: 17px;
 	}
 }
 
