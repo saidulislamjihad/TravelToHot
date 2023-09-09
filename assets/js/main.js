@@ -48,6 +48,17 @@ $(document).ready(function() {
 
 });
 
+var icon = document.getElementById('icon');
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "assets/images/moon.png";
+    }else{
+        icon.src = "assets/images/sun.png";
+    }
+}
+
 //Home slider Js
 // $('.home-slider-wrapper').owlCarousel({
 //     loop: true,

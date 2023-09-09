@@ -4,6 +4,20 @@
     margin: 0;
 }
 
+:root{
+    --primary-color: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));;
+    --secondary-color: #fff; 
+    --link-bg: #fff;
+    --link-color: #000;
+}
+
+.dark-theme{
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --link-bg: #000;
+    --link-color: #fff; 
+}
+
 button,
 a {
     transition: all 0.3s ease;
@@ -34,6 +48,13 @@ body {
     overflow-x: hidden;
     font-family: 'League Spartan', sans-serif;
 }
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
 /*common css End*/
 
 /*Banner section css start*/
@@ -127,7 +148,7 @@ body {
 /*Header css start*/
 .header-section {
     position: relative;
-    background: rgb(0 0 0 / 91%);
+    background: var(--primary-color);
 }
 .nav-items-wrapper {
     display: flex;
@@ -170,7 +191,7 @@ body {
 .nav-item-link {
   position: relative;
   font-size: 16px;
-  color: #fff;
+  color: var(--secondary-color);
   font-weight: 500;
   padding: 10px 17px;
   display: flex;
@@ -183,7 +204,7 @@ body {
 .nav-item-link i {
     margin-left: 6px;
     font-size: 12px;
-    color: #fff;
+    color: var(--secondary-color);
 }
 
 .nav-item.item-has-submenu {
@@ -392,7 +413,7 @@ body {
 /*popular destination section css start*/
 .popular-destination-section {
     padding: 40px 0;
-    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+    background: var(--primary-color);
 }
 .popular-section-title {
     text-align: center;
@@ -401,13 +422,13 @@ body {
 .popular-section-title .title {
     font-size: 45px;
     font-weight: 600;
-    color: #fff;
+    color: var(--secondary-color);
 }
 .popular-section-title .sub-title {
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
-    color: #fff;
+    color: var(--secondary-color);
     margin-bottom: 0;
 }
 .popular-destination-item {
@@ -471,7 +492,7 @@ body {
 /*Useful links section css start*/
 .userful-links-section {
     padding: 40px 0;
-    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+    background: var(--primary-color);
 }
 
 .links-item-outer {
@@ -481,9 +502,9 @@ body {
     transition: all 0.5s ease;
     border-radius: 5px;
     overflow: hidden;
-    background-color: #fff;
+    background-color: var(--link-bg);
     padding: 15px 20px;
-    color: #000;
+    color: var(--link-color);
     font-weight: 600;
     text-transform: capitalize;
     margin-bottom: 15px;
@@ -526,6 +547,7 @@ body {
 .userful-links-section .accordion-item {
     margin-bottom: 20px;
     background: transparent;
+    border: none;
 }
 
 .userful-links-section .accordion-item:hover .accordion-button {
@@ -538,10 +560,10 @@ body {
     color: #fff;
 }
 
-.userful-links-section .accordion-button.collapsed {
+/* .userful-links-section .accordion-button.collapsed {
     background: #fff;
     color: #000;
-}
+} */
 /*Useful links section css End*/
 
 /*Footer section css start*/
@@ -637,7 +659,7 @@ body {
 /*Sub category page css start*/
 .sub-category-section {
     padding: 40px 0;
-    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+    background: var(--primary-color);
 }
 
 .sub-category-content .sub-title {
@@ -662,14 +684,14 @@ body {
 
 .google-map-section {
     padding: 20px 0;
-    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+    background: var(--primary-color);
 }
 /*Sub category page css end*/
 
 /*About page css start*/
 .about-section {
     padding: 20px 0;
-    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+    background: var(--primary-color);
 }
 .about-sec-content-wrap {
     background: #fff;
@@ -709,7 +731,7 @@ body {
 /*Contact section css start*/
 .contact-section-wrapper {
     padding: 40px 0;
-    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+    background: var(--primary-color);
 }
 
 .contact-info-item {
@@ -827,7 +849,7 @@ body {
 
 /*Details page css start*/
 .details-section {
-    background: linear-gradient(rgb(0 0 0 / 85%), rgb(0 0 0));
+    background: var(--primary-color);
     padding: 40px 0;
 }
 
